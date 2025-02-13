@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    
+}
+:root {
+    --purple: hsl(264, 100%, 61%);
+    --pink: hsl(293, 100%, 63%);
+}
+
+ .ph-par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 100px;
+ }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: "Rubik", serif;
+    position: relative;
+   
+     
+}
+.phone {
+    width: 300px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    border: 12px solid white;
+    background:hsl(270, 20%, 96%);
+
+    position: relative;
+    border-radius: 30px;;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.phTop {
+    height: 80px;
+    background-image: linear-gradient(to Right, var(--purple) , var(--pink));
+border-radius: 20px;;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+position: relative;
+
+
+}
+.phTop > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+    border: 2px solid white;
+    margin-left: 30px;
+}
+.name-status {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.name-status h3{
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 16px;
+font-weight: 500;
+
+}
+.name-status h6 {
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 8px;;
+    font-weight: 300;
+}
+.phTop::before,
+.phTop::after {
+    content: "";
+    width: 2px;
+    height: 7px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;;
+    left: 20px;
+    
+}
+.phTop::after {
+    transform: rotate(30deg);
+    top: calc(50% - 6px);
+}
+.phTop::before {
+    transform: rotate(-30deg);
+    top: 50%;
+
+}
+.settings div {
+    width:3px;
+    height: 3px;
+    margin-bottom: 2px;;
+    background-color: white;
+    border-radius: 50%;;
+    margin-left: 100px;
+   
+}
+ 
+.phone::before {
+    position:absolute;
+    content: "";
+    width: 60%;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 3;
+    border-radius: 15px;
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+
+
+}
+.first2let {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    color: hsl(276, 55%, 52%);
+    
+}
+.letter1,
+.letter2 {
+
+    width: 55%;
+    background-color: hsl(266, 11%, 88%);
+    padding: 10px;
+    border-radius: 12px;;
+    margin-left: 10px
+
+}
+.images-letter {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+  
+}
+.images-letter img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.second2let {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: hsl(271, 15%, 43%);
+}
+.letter3,
+.letter4 {
+
+    width: 55%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 12px;;
+    
+
+}
+.letter4 {
+    width: fit-content;
+}
+
+.letter5 {
+    width: 55%;
+    background-color: hsl(266, 11%, 88%);
+    padding: 10px;
+    border-radius: 12px;;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: hsl(276, 55%, 52%);
+}
+.notification1,
+.notification2 {
+    background-image: linear-gradient(to Right, var(--pink), var(--purple));
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;;
+    position: relative;
+
+}
+.notification1::before,
+.notification2::before {
+
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    
+  border: 1px solid hsl(289, 100%, 72%);
+    left: 7px;
+    top: calc(50%-10px);
+    z-index: 1;
+}
+.time-left {
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 10px;
+    margin-right: -20px;
+}
+.notification1 .price {
+    color: white;
+    margin-left: 20px;
+    font-weight: 800;
+}
+.notification2 .price {
+    color: white;
+    font-weight: 800;
+    margin-left: 35px;
+}
+.notis {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.bottomBar {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 18px;
+    margin-top: 15px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottomBar p {
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.705);
+    margin-left: 10px;
+}
+.bottomBar button {
+
+    background-color: hsl(271, 36%, 24%);
+    border: 1px solid hsl(271, 36%, 24%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;;
+    position: relative;
+
+
+
+    
+}
+.bottomBar button::before,
+.bottomBar button::after {
+    content: "";
+    width: 2px;
+    height: 7px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;;
+    left: 50%;
+    top: 50%;
+    
+    
+}
+.bottomBar button::before {
+    transform: rotate(45deg) translateX(-2px);
+}
+
+.bottomBar button::after {
+    transform: rotate(-45deg) translate(3px, -5px);
+}
+
+.parag {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.parag h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 45px;
+}
+.parag p {
+    color: hsl(270, 7%, 64%);
+    font-size: 20px;
+    
+ 
+}
+.leftBar {
+    min-width: 32.7%;
+    min-height: 90%;
+    background-color: var(--purple);
+    position: absolute;
+    border-bottom-left-radius: 420px;
+    border-bottom-right-radius: 420px;
+   top: 0;
+   left: -5%;
+   background-image: linear-gradient(to bottom, hsl(289, 100%, 72%), var(--purple));
+}
+.rightBar {
+    min-width: 32.7%;
+    min-height: 90%;
+    background-color: hsla(264, 100%, 61%, 0.041);
+    position: absolute;
+    border-top-left-radius: 420px;
+    border-top-right-radius: 420px;
+   bottom: 0;
+   right: -5%;
+}
+@media (max-width: 1440px ) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .phone {
+        width: 250px;
+        height: 500px;
+    }
+    .phTop {
+        height: 60px;
+    }
+    .phTop > img {
+        width: 30px;
+        height: 30px;
+    }
+    .name-status h3 {
+        font-size: 14px;
+    }
+    .name-status h6 {
+        font-size: 6px;
+    }
+    .settings div {
+        margin-left: 80px;
+    }
+    .first2let {
+        gap: 5px;
+    }
+    .letter1,
+    .letter2 {
+        padding: 5px;
+    }
+    .images-letter img {
+        width: 50px;
+        height: 50px;
+    }
+    .second2let {
+        gap: 5px;
+    }
+    .letter3,
+    .letter4 {
+        padding: 5px;
+    }
+    .notification1,
+    .notification2 {
+        height: 20px;
+    }
+    .notification1::before,
+    .notification2::before {
+        width: 8px;
+        height: 8px;
+        left: 5px;
+    }
+    .time-left {
+        font-size: 8px;
+    }
+    .notification1 .price {
+        margin-left: 15px;
+    }
+    .notification2 .price {
+        margin-left: 20px;
+    }
+    .notis {
+        gap: 5px;
+    }
+    .bottomBar {
+        padding: 3px;
+        margin-top: 10px;
+    }
+    .bottomBar p {
+        font-size: 8px;
+    }
+    .bottomBar button {
+        width: 20px;
+        height: 20px;
+    }
+    .bottomBar button::before,
+    .bottomBar button::after {
+        width: 1px;
+        height: 5px;
+    }
+    .parag h1 {
+        font-size: 35px;
+    }
+    .parag p {
+        font-size: 15px;
+    }
+    .leftBar {
+        min-width: 30%;
+    }
+    .rightBar {
+        min-width: 30%;
+    }
+    .phone::before {
+        top: -5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ph-par {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;;
+    }
+    .parag {
+        width: 60%;
+        z-index: 1;
+    }
+    .leftBar {
+        min-height: 70%;
+        min-width: 35%;
+    }
+
+    .rightBar {
+        
+        z-index: -1;
+          min-height: 70%;
+        min-width: 35%;
+    }
+}
+@media (max-width: 570px) {
+    .leftBar {
+        min-height: 50%;
+        min-width: 50%;
+    }
+
+    .rightBar {
+        
+        z-index: -1;
+          min-height: 50%;
+        min-width: 50%;
+    }
+}
